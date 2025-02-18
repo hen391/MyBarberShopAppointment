@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/scheduleFragment">
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.AppointmentsFragment"
+        android:label="Appointments"
+        tools:layout="@layout/fragment_appointments" />
+
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.ServicesFragment"
+        android:label="Services"
+        tools:layout="@layout/fragment_services" />
+</navigation>

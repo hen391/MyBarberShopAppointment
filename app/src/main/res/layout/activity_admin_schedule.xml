@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- לוח שנה להצגת לו"ז קלנדרי -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- שדה שעת פתיחה -->
+    <EditText
+        android:id="@+id/editTextOpenTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarView"
+        android:hint="Opening Time"
+        android:inputType="time"
+        android:minHeight="48dp" />
+
+    <!-- שדה שעת סגירה -->
+    <EditText
+        android:id="@+id/editTextCloseTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextOpenTime"
+        android:hint="Closing Time"
+        android:inputType="time"
+        android:minHeight="48dp" />
+
+    <!-- כפתור שמירת לו"ז מותאם -->
+    <Button
+        android:id="@+id/buttonManageSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/editTextCloseTime"
+        android:text="Save Custom Schedule" />
+
+    <!-- כפתור מחיקת לו"ז לברירת מחדל (נמחק מה-DB) -->
+    <Button
+        android:id="@+id/buttonResetToDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonManageSchedule"
+        android:text="Reset to Default Hours"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white" />
+
+    <!-- כפתור לסגירת המספרה ליום מסוים -->
+    <Button
+        android:id="@+id/buttonClosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonResetToDefault"
+        android:text="Set Day As Closed"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

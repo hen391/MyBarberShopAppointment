@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Widget.Material3.Button.Filled" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#9575CD</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:strokeColor">#9575CD</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+</resources>

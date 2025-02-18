@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- תצוגת קלנדר לבחירת תאריך -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true" />
+
+    <!-- הודעה כשאין תורים -->
+    <TextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="אין תורים להצגה"
+        android:textSize="18sp"
+        android:layout_below="@+id/calendarView"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:padding="16dp" />
+
+    <!-- תצוגת רשימת התורים -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_below="@+id/textViewEmpty"
+        android:layout_margin="16dp"
+        android:background="#1D009688" />
+
+    <!-- סמן טעינה -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mybarbershopappointment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.MyBarberShop"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/logo"
+        android:label="MyBarberShopAppointment">
+
+        <!-- מסך התחברות (ברירת מחדל) -->
+        <activity android:name=".Activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.AdminDashboardActivity" />
+        <activity android:name=".Activities.UserDashboardActivity" />
+        <activity android:name=".Activities.BookAppointmentActivity"
+            android:parentActivityName=".Activities.UserDashboardActivity"/>
+        <activity android:name=".Activities.AppointmentsActivity"
+            android:parentActivityName=".Activities.UserDashboardActivity"/>
+        <activity android:name=".Activities.AdminManageServicesActivity"
+            android:parentActivityName=".Activities.AdminDashboardActivity"/>
+        <activity android:name=".Activities.AdminScheduleActivity"
+            android:parentActivityName=".Activities.AdminDashboardActivity"/>
+        <activity android:name=".Activities.AdminViewAppointmentsActivity"
+            android:parentActivityName=".Activities.AdminDashboardActivity"/>
+
+    </application>
+</manifest>

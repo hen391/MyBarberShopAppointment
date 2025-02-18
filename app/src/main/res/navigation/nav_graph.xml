@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/bookAppointmentFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.BookAppointmentFragment"
+        android:label="Book Appointment"
+        tools:layout="@layout/fragment_book_appointment" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.mybarbershopappointment.Fragments.AdminFragment"
+        android:label="Admin"
+        tools:layout="@layout/fragment_admin" />
+
+</navigation>

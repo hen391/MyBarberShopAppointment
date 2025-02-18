@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159402502932",
+    "project_id": "mybarbershopappointment",
+    "storage_bucket": "mybarbershopappointment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159402502932:android:893f78a96a6fe4c06cf001",
+        "android_client_info": {
+          "package_name": "com.example.mybarbershopappointment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr6HH59H4cdxCv4Y63Td5cTne_uk3gd90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
